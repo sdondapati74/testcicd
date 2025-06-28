@@ -35,9 +35,10 @@ jobs:
       - 
         name: Check out the repo
         uses: actions/checkout@v2
-      - 
-        name: Run Docker container
-        uses: addnab/docker-run-action@v3
-        with:
-          image: sdondapati/dockerhello:latest
-          run: echo "Hello from Docker"
+
+    container:
+      image: sdondapati/dockerhello:latest
+      # Optional: credentials for private repositories
+      credentials:
+        username: ${{ vars.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
