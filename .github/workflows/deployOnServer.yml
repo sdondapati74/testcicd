@@ -20,9 +20,10 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: sshuser
-          password: ${{ secrets.PASSWORD }}
+          password: venkat123
           port: ${{ secrets.PORT }}
           script: whoami
+          timeout: 1200s
           debug: true
             
             
