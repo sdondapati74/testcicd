@@ -33,4 +33,9 @@ jobs:
           context: .
           push: true
           tags: sdondapati/dockerhello:latest
-      
+      - 
+        name: Run Docker container
+        uses: addnab/docker-run-action@v3
+        with:
+          image: sdondapati/dockerhello:latest
+          run: echo "Hello from Docker"
