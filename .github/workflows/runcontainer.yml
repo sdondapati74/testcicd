@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Deploy
 
 # Controls when the workflow will run
 on:
@@ -11,7 +9,7 @@ on:
     branches: [ "main" ]
     
 jobs:
-  docker:
+  my_job:
     runs-on: ubuntu-latestcontainer:
       image: sdondapati/dockerhello:latest
       credentials:
