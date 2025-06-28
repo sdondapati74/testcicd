@@ -21,10 +21,6 @@ jobs:
           username: g8
           password: venkat123
           script: |
-            docker pull sdondapati/dockerhello:latest
-            docker stop testhello || true  # Stop container if running
-            docker rm testhello || true    # Remove container if exists
-            docker run -d --name testhello -p 80:80 sdondapati/dockerhello:latest # Replace with your 
-
-
+            echo "Hello World"
+            
           
