@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
       steps:
       - name: connect and pull
-        run: ssh ge8/venkat123@ 192.168.1.37 "docker run -d -p 8080:80 sdondapati/dockerhello:latest && exit"
+        run: echo "hello world"
