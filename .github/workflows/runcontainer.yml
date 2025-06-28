@@ -14,7 +14,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     container:
-      image: sdondapati/dockerhello1:latest
+      image: sdondapati/dockerhello:latest
       credentials:
         username: ${{ vars.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
