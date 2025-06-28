@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy to Docker Desktop
         run: |
-          docker run -d -p 8080:80 sdondapati/dockerhello:latest
+          docker run -d --name testhello -p 8080:80 sdondapati/dockerhello:latest
