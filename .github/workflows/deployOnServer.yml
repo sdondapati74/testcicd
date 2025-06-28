@@ -20,8 +20,8 @@ jobs:
           host: 192.168.1.37
           username: G8
           password: venkat123
-          debug: true
-          script: |
-            echo "Hello World"
+          port: 22
+          script: whoami
+            
             
           
