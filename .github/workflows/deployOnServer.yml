@@ -19,7 +19,7 @@ jobs:
         with:
           host: 192.168.1.37
           username: g8
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: venkat123
           script: |
             docker pull sdondapati/dockerhello:latest
             docker stop testhello || true  # Stop container if running
