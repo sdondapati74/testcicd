@@ -17,10 +17,10 @@ jobs:
       - name: Deploy with SSH
         uses: appleboy/ssh-action@v0.1.7  
         with:
-          host: 192.168.1.37
+          host: ${{ secrets.HOST }}
           username: G8
-          password: venkat123
-          port: 22
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
           script: whoami
             
             
