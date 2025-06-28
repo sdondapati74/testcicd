@@ -18,8 +18,9 @@ jobs:
         uses: appleboy/ssh-action@v0.1.7  
         with:
           host: 192.168.1.37
-          username: g8
+          username: G8
           password: venkat123
+          debug: true
           script: |
             echo "Hello World"
             
