@@ -18,3 +18,9 @@ jobs:
       credentials:
         username: ${{ vars.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    steps:
+      - name: Run some commands
+        run: |
+          # Commands will run inside the container
+          echo "Running inside the container"
+          ls -l .  # Access files from mounted volume
