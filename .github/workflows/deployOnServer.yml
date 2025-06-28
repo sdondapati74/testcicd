@@ -18,7 +18,7 @@ jobs:
       - name: Deploy with SSH
         uses: appleboy/ssh-action@v1 
         with:
-          host: 192.168.1.37
+          host: 36.255.85.107
           username: sshuser
           password: venkat123
           port: 22
