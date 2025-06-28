@@ -3,15 +3,28 @@
 name: deploy
 
 # Controls when the workflow will run
+
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main 
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-      steps:
-        - name: connect and pull
-          run: echo "hello world"
-        - name: ssh
-          run: ssh ge8/venkat123@ 192.168.1.37 "exit"
+    name: Deploy Container to Local Machine
+    runs-on: ubuntu-latest  
+    steps:
+      - name: Deploy with SSH
+        uses: appleboy/ssh-action@v0.1.7  
+        with:
+          host: 192.168.1.37
+          username: g8
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker pull sdondapati/dockerhello:latest
+            docker stop testhello || true  # Stop container if running
+            docker rm testhello || true    # Remove container if exists
+            docker run -d --name testhello -p 80:80 sdondapati/dockerhello:latest # Replace with your 
+
+
+          
