@@ -18,10 +18,10 @@ jobs:
       - name: Deploy with SSH
         uses: appleboy/ssh-action@v1 
         with:
-          host: ${{ secrets.HOST }}
+          host: 192.168.1.37
           username: sshuser
           password: venkat123
-          port: ${{ secrets.PORT }}
+          port: 22
           script: whoami
           timeout: 1200s
           debug: true
