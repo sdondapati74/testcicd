@@ -36,9 +36,6 @@ jobs:
         name: Check out the repo
         uses: actions/checkout@v2
 
-    container:
-      image: sdondapati/dockerhello:latest
-      # Optional: credentials for private repositories
-      credentials:
-        username: ${{ vars.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Deploy to Docker Desktop
+        run: |
+          docker run -d -p 8080:80 sdondapati/dockerhello:latest
