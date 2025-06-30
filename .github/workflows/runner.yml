@@ -32,7 +32,8 @@ jobs:
         run: pip install numpy
       - name: echo pythonpath
         run: echo $PYTHONPATH
-      - name: export custom package path
-        run: echo "::set-env name=PYTHONPATH::/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py"   
+      - name: set pythonpath
+        run: |
+          echo "PYTHONPATH=/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py" >> $GITHUB_ENV  
       - name: echo pythonpath    
         run: echo $PYTHONPATH      
