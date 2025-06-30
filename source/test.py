@@ -1,3 +1,6 @@
+import sys
+print(sys.path)
+
 # Requisite imports
 from vector_store import VectorStore  # Importing the VectorStore class from vector_store module
 import numpy as np  # Importing numpy for numerical operations
