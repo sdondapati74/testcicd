@@ -26,5 +26,10 @@ jobs:
         uses: actions/setup-python@v5.6.0
         with:
           python-version: 3.8
+      - name: upgrade pip
+        run: python -m pip install --upgrade pip
 
+      - name: insall numpy
+        run: pip numpy
+      
       
