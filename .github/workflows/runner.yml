@@ -33,9 +33,8 @@ jobs:
       - name: echo pythonpath
         run: echo $PYTHONPATH
       - name: export custom package path
-        run: echo "/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py" >> $PYTHONPATH   
-      - name: su
-        run: source ~/.bashrc
+        run: echo "PATH=/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py" >> $PYTHONPATH  
+        shell: bash
       - name: echo pythonpath    
         run: echo $PYTHONPATH      
       
