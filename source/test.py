@@ -20,3 +20,4 @@ vocabulary = set()  # Initializing an empty set to store unique words
 for sentence in sentences:  # Iterating over each sentence in the list
     tokens = sentence.lower().split()  # Tokenizing the sentence by splitting on whitespace and converting to lowercase
     vocabulary.update(tokens)  # Updating the set of vocabulary with unique tokens
+print("vocabulary",vocabulary)
