@@ -33,8 +33,6 @@ jobs:
       - name: echo pythonpath
         run: echo $PYTHONPATH
       - name: export custom package path
-        run: echo "PYTHONPATH=/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py" >> $GITHUB_PATH  
-        shell: bash
+        run: echo "::set-env name=PYTHONPATH::/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py"   
       - name: echo pythonpath    
         run: echo $PYTHONPATH      
-      
