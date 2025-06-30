@@ -1,9 +1,6 @@
 import sys
 print(sys.path)
 
-export PYTHONPATH=${PYTHONPATH}:/home/runner/work/testcicd/testcicd/vector_store
-
-
 print(sys.path)
 
 # Requisite imports
