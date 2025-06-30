@@ -62,6 +62,7 @@ class VectorStore:
 
         # Sort by similarity in descending order
         results.sort(key=lambda x: x[1], reverse=True)
+        print(results)
 
         # Return the top N results
         return results[:num_results]
