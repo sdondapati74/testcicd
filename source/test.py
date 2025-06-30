@@ -2,7 +2,7 @@ import sys
 sys.path.append('/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py')
 
 # Requisite imports
-from vector_store import VectorStore  # Importing the VectorStore class from vector_store module
+import vector_store.VectorStore  # Importing the VectorStore class from vector_store module
 import numpy as np  
 
 # Establish a VectorStore instance
