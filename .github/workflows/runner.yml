@@ -30,8 +30,9 @@ jobs:
         run: python -m pip install --upgrade pip 
       - name: Install numpy
         run: pip install numpy
-      - name: hello world
-        run: echo hello world
+      - name: run test.py
+        run: python source/test.py
+
 
       
       
