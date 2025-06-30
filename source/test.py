@@ -35,6 +35,8 @@ for sentence in sentences:  # Iterating over each sentence in the list
     for token in tokens:  # Iterating over each token in the sentence
         vector[word_to_index[token]] += 1  # Incrementing the count of the token in the vector
     sentence_vectors[sentence] = vector  # Storing the vector for the sentence in the dictionary
+    print(sentence)
+    print(vector)
 
 # Store in VectorStore
 for sentence, vector in sentence_vectors.items():  # Iterating over each sentence vector
