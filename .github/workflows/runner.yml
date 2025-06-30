@@ -34,8 +34,10 @@ jobs:
         run: echo $PYTHONPATH
       - name: export custom package path
         run:   export PYTHONPATH=/path/to/your/custom/package/directory:$PYTHONPATH        
-      - name: echo pythonpath
+      - name: echo pythonpath    
         run: echo $PYTHONPATH
+      - name: Run a python file    
+        run: python source/test.py
 
 
       
