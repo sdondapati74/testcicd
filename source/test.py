@@ -1,7 +1,5 @@
 import sys
 
-from testpackage.areafunctions import rectangle
+from vector_store.VectorStore import VectorStore
 
-testval=rectangle(10,5)
-
-print(testval)
+print("Hello World")
