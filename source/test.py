@@ -1,6 +1,6 @@
 import sys
 
-from testpackage import areafunctions.py
+from testpackage import areafunctions
 
 testval=rectangle(10,5)
 
