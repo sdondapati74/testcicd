@@ -36,4 +36,4 @@ jobs:
         run: |
           echo "PYTHONPATH=/home/runner/work/testcicd/testcicd/vector_store/VectorStore.py" >> $GITHUB_ENV  
       - name: echo python program   
-        run: python test.py  
+        run: python source/test.py  
