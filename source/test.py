@@ -45,10 +45,14 @@ for sentence, vector in sentence_vectors.items():  # Iterating over each sentenc
 # Similarity Search
 query_sentence = "Mango is the best fruit"  # Defining a query sentence
 query_vector = np.zeros(len(vocabulary))  # Initializing a numpy array of zeros for the query vector
+print(query_vector)
 query_tokens = query_sentence.lower().split()  # Tokenizing the query sentence and converting to lowercase
 for token in query_tokens:  # Iterating over each token in the query sentence
     if token in word_to_index:  # Checking if the token is present in the vocabulary
         query_vector[word_to_index[token]] += 1  # Incrementing the count of the token in the query vector
+        print(token )
+        print(word_to_index[token] )
+        print(query_vector[word_to_index[token]] )
 
 similar_sentences = vector_store.find_similar_vectors(query_vector, num_results=2)  # Finding similar sentences
 
