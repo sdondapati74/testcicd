@@ -1,6 +1,7 @@
 import sys
 
 from vector_store.VectorStore import VectorStore
+import numpy as np
 
 print("Hello World")
 
