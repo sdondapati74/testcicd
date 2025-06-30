@@ -53,7 +53,7 @@ for token in query_tokens:  # Iterating over each token in the query sentence
         print(token )
         print(word_to_index[token] )
         print(query_vector[word_to_index[token]] )
-
+print(query_vector)
 similar_sentences = vector_store.find_similar_vectors(query_vector, num_results=2)  # Finding similar sentences
 
 # Display similar sentences
