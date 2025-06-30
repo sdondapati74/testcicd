@@ -33,7 +33,7 @@ jobs:
       - name: echo pythonpath
         run: echo $PYTHONPATH
       - name: export custom package path
-        run:   export PYTHONPATH=/path/to/your/custom/package/directory:$PYTHONPATH        
+        run:   export PYTHONPATH=/home/runner/work/testcicd/testcicd/vector_store:$PYTHONPATH        
       - name: echo pythonpath    
         run: echo $PYTHONPATH
       - name: Run a python file    
