@@ -26,6 +26,12 @@ jobs:
         uses: actions/setup-python@v5.6.0
         with:
           python-version: 3.8
-      - name: Run a python file    
-        run: echo "hello world"
+      - name: Pip upgrade
+        run: python -m pip install --upgrade pip 
+      - name: Install numpy
+        run: pip install numpy
+      - name: hello world
+        run: echo hello world
+
+      
       
