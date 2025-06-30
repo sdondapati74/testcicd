@@ -31,7 +31,7 @@ jobs:
       - name: Install numpy
         run: pip install numpy
       - name: export custom package path
-        run: export PYTHONPATH=/home/runner/work/testcicd/testcicd/vector_store:$PYTHONPATH
+        run: ls /home/runner/work/testcicd/testcicd/vector_store
       - name: run test.py
         run: python source/test.py
 
